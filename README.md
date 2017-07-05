@@ -1,2 +1,2 @@
 # solipi
-Solipi : une SOLution Informatique SOLidaire basée sur Raspberry Raspbian pour les associations du secteur social du projet https://solisol.org Edit Add topics
+Solipi : une SOLution Informatique SOLidaire basée sur Raspberry Raspbian pour les associations du secteur social du projet https://solisol.org
