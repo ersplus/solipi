@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Définition des variables
+
+FILE='/opt/borne/charte'
+
+guestcharte=$( zenity --text-info --title="Charte d’utilisation" --html --filename=$FILE --checkbox="J’accepte la charte" )
+	case $? in
+		0)
+			echo "Bonjour"
+		# next step
+		;;
+		1)
+			echo "Vous devez accepter la charte pour pouvoir utiler cette borne."
+		;;
+		-1)
+			echo "Une erreur est survenue."
+		;;
+	esac
+fi
+
+exec /usr/lib/lightdm/lightdm-guest-session "$@"
